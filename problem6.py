@@ -36,7 +36,7 @@ def solve_problem():
     sum1 = sum_of_squares()
     sum2 = square_of_sum()
 
-    return sum2 -sum1
+    return sum2 - sum1
 
 
 if __name__ == '__main__':
