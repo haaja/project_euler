@@ -23,7 +23,7 @@ def solve_problem():
     longest = 0
     start = 0
 
-    for x in range(1, 1000000, 2):
+    for x in range(1, 1000000):
         terms = collatz(x)
         if longest < terms:
             longest = terms
