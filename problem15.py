@@ -12,8 +12,6 @@ def solve_problem():
     rows = 20
     cols = 20
 
-    #return math.factorial(rows+cols)/(math.factorial(rows)*math.factorial(cols))
-
     return math.factorial(rows+cols) / (math.factorial(rows) * math.factorial(cols))
 
 if __name__ == '__main__':
