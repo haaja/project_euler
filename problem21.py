@@ -9,6 +9,7 @@ For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44,
 
 Evaluate the sum of all the amicable numbers under 10000.
 """
+import math
 
 def solve_problem():
 
@@ -25,14 +26,18 @@ def solve_problem():
 
 def sum_of_divisors(number):
 
-    sum = 0
+    sum = 1
 
     if number == 0:
         return 0
 
-    for x in range(1, number):
+    limit = math.sqrt(number)
+    for x in range(2, int(limit)+1):
         if number % x == 0:
-            sum += x
+            sum += x + number / x
+
+    if limit == int(limit):
+        sum -= limit
 
     return sum
 
